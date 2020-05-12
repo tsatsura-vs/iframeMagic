@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BG takeover</title>
+</head>
+<body>
+
+  <style>
+	  #backgroundAd,#bgTakeoverLinks{display:none;}
+#Off-Road_com_Pushdown_PS {margin: 0 auto 0; text-align: center;}
+#Off-Road_com_Pushdown_PS > div {margin: 0 auto; text-align: center; display: inline-block;vertical-align:top;}
+	  @media (min-width: 1200px){
+
+	    html body{overflow-x:hidden !important}
+	    #bgTakeoverLinks{display:block;height:0;width:999px;margin:0 auto;position:absolute;left:0;right:0; -webkit-backface-visibility: hidden;
+	       -moz-backface-visibility: hidden;
+	            backface-visibility: hidden;top:0}
+	    #bgTakeoverLinks a{
+	    	position:absolute;z-index:1;top:0;width:330px;height:100%;display:block;left:-330px;height:100vh;text-decoration:none;
+	    	-webkit-background-size: 100% !important;
+         -o-background-size: 100% !important;
+            background-size: 100% !important;
+        -webkit-transition: 0.2s;
+           -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+             -o-transition: 0.2s;
+                transition: 0.2s;
+	    }
+	    #bgTakeoverLinks a:hover{text-decoration:none}
+	    #bgTakeoverLinks .bgTakeoverLinks_right a{right:-330px;left:auto}
+	    #bgTakeoverLinks{width: 999px}
+
+	    .stick-to-top{
+	      position: fixed !important;
+	      top: 0 !important;
+	      z-index: 99;
+	      -webkit-backface-visibility: hidden;
+	         -moz-backface-visibility: hidden;
+	              backface-visibility: hidden;
+	    }
+
+	    .stick-to-top-footer{
+	      position: fixed !important;
+	      z-index: 99;
+	      -webkit-backface-visibility: hidden;
+	         -moz-backface-visibility: hidden;
+	              backface-visibility: hidden;
+	    }
+
+		.site-content{width: 999px; margin: 0 auto; background: #fff; padding: 20px;}
+		.site-content .content-area .site-main{max-width:635px;}
+	  }
+
+	  /* Footer Element - z-index */
+	  #bgTakeoverLinks.stick-to-top-footer{ top: 0 !important; }
+	  .site-footer{ position:relative;z-index:1001; }
+footer > .ad-desktop{background: #fff;width: 999px;margin: 0 auto;padding-bottom: 5px;height: auto !important;margin-bottom: 0 !important;}
+footer > .ad-desktop > div {padding-bottom: 30px;box-sizing: border-box;}
+
+	  /* Header Elements - z-index */
+	  nav, .info-bar, #header{ position:relative;z-index:1100; }
+
+	  /* If fluid layout then constrain it */
+
+	  /* Background color */
+	  body{background-color:#028ed1}
+
+
+	/* Breakpoints */
+
+  .whiteSpace {
+    width:1100px;
+    height:100vh;
+    background:white;
+    display:block;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    z-index: 9;
+  }
+</style>
+
+<!-- Change links here  -->
+<div id="bgTakeoverLinks">
+  <div class="bgTakeoverLinks_left">
+	<a href="%%CLICK_URL_UNESC%%https://ad.doubleclick.net/ddm/trackclk/N57901.138458AUTOGUIDE.COM/B22265420.239061125;dc_trk_aid=436331320;dc_trk_cid=111603576;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=" target="_blank" style="background:url('https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKC7scqvtAEQvwIYgAYoATIIttLlflAnRUg') right top no-repeat;"> </a>
+  </div>
+    <!-- <div class="whiteSpace"></div> -->
+  <div class="bgTakeoverLinks_right">
+	<a href="%%CLICK_URL_UNESC%%https://ad.doubleclick.net/ddm/trackclk/N57901.138458AUTOGUIDE.COM/B22265420.239061125;dc_trk_aid=436331320;dc_trk_cid=111603576;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=" target="_blank" style="background:url('https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKC7sYrc9QEQvwIYgAYoATII7kSEnUAxIrw') left top no-repeat;"> </a>
+  </div>
+</div>
+
+<!-- <IMG SRC="https://ad.doubleclick.net/ddm/trackimp/N57901.138458AUTOGUIDE.COM/B22265420.239061125;dc_trk_aid=436331320;dc_trk_cid=111603576;ord=%%CACHEBUSTER%%;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" BORDER="0" HEIGHT="1" WIDTH="1" style="position:absolute;" ALT="Advertisement"> -->
+
+  <!-- var getMainContainer = document.getElementById('container');
+  Object.assign(getMainContainer.style, {
+    "background":"white",
+    "position":"relative"
+  }); -->
+
+  <style id="parentAdjustmentCSS">
+    #frame1 {
+      position: absolute;
+      z-index:99;
+      top:0;
+      left:50%;
+      transform:translateX(-50%);
+    }
+  </style>
+
+
+<!-- <script src="iframeMagic-child.js"></script>
+<script>bgSync('#header','.fixedNavbar');</script> -->
+<script src="vs-iframe-messenger-insideAd-v2.js"></script>
+  <script>
+  bgSync();
+  </script>
+
+
+
+
+
+</body>
+</html>

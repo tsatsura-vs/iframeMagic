@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Live autoGuide Ad</title>
+</head>
+<body>
+  <style>
+  .toggle_parent{
+    position: relative;
+  width: 1000px;
+  }
+#togglej {
+  position: absolute;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  padding: 2px 9px;
+  cursor: pointer;
+  right: 3px;
+  margin-top: 3px;
+  z-index: 100;
+}
+
+.toggler {
+  cursor: pointer;
+}
+
+#togglej:hover {color:#FFFFFF;}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    var hoverWorks = true;
+    $('.toggler').on('mouseover', openClose);
+  $('#togglej').on('click', openClose);
+
+    function openClose(){
+      if(!hoverWorks)
+        return;
+      $(this).parent().children().toggle("fast");  //swaps the display:none between the two spans
+      $(this).parent().parent().find('.toggled_content').slideToggle("fast");  //swap the display of the main content with slide action
+      hoverWorks = false;
+      activateHover();
+  }
+
+  function deactivateHover(){
+    hover
+  }
+
+  function activateHover(){
+    setTimeout(function(){
+      hoverWorks = true;
+    }, 500);
+  }
+
+});
+</script>
+
+</head>
+
+<body>
+<div class="toggle_parent">
+  <div class="toggleHolder">
+    <span class='toggler'><img src="https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCrh8nn0AEQ5wcYWigBMgg9nTkytvGV-g" alt="COOPERTIRES"></span>
+
+    <span id="togglej" style="display:none;">x</span>
+  </div>
+  <div class="toggled_content" style="display: none;">
+          <a href="%%CLICK_URL_UNESC%%http://www.autoguide.com" target="_blank"><img src="https://tpc.googlesyndication.com/pageadimg/imgad?id=CICAgKC7r4-RURDnBxigAygBMgjT619L3MXN1g" alt="COOPERTIRES"></a>
+  </div>
+</div>
+
+<!-- caquino: commented this out because this looks like a tracking pixel from the live campaign -->
+<!--IMG SRC="https://ad.doubleclick.net/ddm/trackimp/N5446.138458AUTOGUIDE.COM/B20591826.215466603;dc_trk_aid=414449446;dc_trk_cid=98411418;ord=%%CACHEBUSTER%%;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" BORDER="0" HEIGHT="1" WIDTH="1" ALT="Advertisement"--->
+
+<script src="vs-iframe-messenger-insideAd-v2.js"></script>
+<script>
+runPushDown();
+</script>
+
+</body>
+</html>
